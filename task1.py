@@ -10,14 +10,14 @@ captcha_timeout = 1000
 driver = webdriver.Chrome()
 driver.get("https://www.tiketa.lt/EN/search")
 
-#Registered method
+# Registered method
 # driver.find_element_by_xpath("//*[text()='Login']").click()
 # driver.find_element_by_id("txtLoginName").send_keys("email")
 # driver.find_element_by_id("txtLoginPsw").send_keys("password")
 # driver.find_element_by_id("btnLogin").click()
 # driver.refresh()
 
-#Unregistered method
+# Main
 driver.find_element_by_xpath("//input[@placeholder='Search ...']").send_keys("Forum", Keys.TAB)
 driver.find_element_by_id("cityCaption").click()
 driver.find_element_by_xpath("//a[text()='Kaunas']").click()
