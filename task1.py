@@ -42,6 +42,6 @@ price = WebDriverWait(driver,captcha_timeout).until(lambda d: d.find_element_by_
 action2 = ActionChains(driver).move_to_element(price).click()
 action2.perform()
 
-sector = WebDriverWait(driver,captcha_timeout).until(lambda d: d.find_element_by_xpath("//*[@class='price' and contains(text(), 'Sėdimas')]"))
+sector = WebDriverWait(driver,timeout).until(lambda d: d.find_element_by_xpath("//*[@class='price' and contains(text(), 'Sėdimas')]"))
 action3 = ActionChains(driver).move_to_element(sector).click()
 action3.perform()
