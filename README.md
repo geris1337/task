@@ -4,7 +4,7 @@ These files are intended to run on Debian/Ubuntu based systems.
 
 ### Prerequisites
 
-These can be installed by launching the prepare.sh script inside the project directory
+These can be installed by launching the prepare.sh script
 ```
 git clone https://github.com/geris1337/task.git
 cd python
