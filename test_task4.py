@@ -20,9 +20,9 @@ def prepare():
 
 @pytest.mark.parametrize("filepath", prepare())
 def test_min(filepath):
-    with open(filepath[0], 'r') as file1:
+    with open(filepath[0], 'r', encoding='utf-8') as file1:
         data1 = file1.read().replace('\r\n', '\n').replace('\n', '')
-    with open(filepath[1], 'r') as file2:
+    with open(filepath[1], 'r', encoding='utf-8') as file2:
         data2 = file2.read().replace('\r\n', '\n').replace('\n', '')
     
     assert data1 == data2
