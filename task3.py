@@ -26,3 +26,4 @@ color = Color.from_string(element.value_of_css_property('background-color'))
 
 if color.hex == "#5da423":
     element.click()
+    driver.quit()
