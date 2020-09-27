@@ -11,7 +11,7 @@ def prepare():
             inputfile = 'data/' + item
             outputfile = 'data/' + item.replace("input.txt", "processed.txt")
             subprocess.call(['python3', 'upper_case_file.py', '--input-file', inputfile, '--output-file', outputfile])
-	        # Prepare comparison file multilist
+	    # Prepare comparison file multilist
             first = "data/%s" % (item.replace("input.txt", "processed.txt")),
             second = "data/%s" % (item.replace("input.txt", "output.txt")),
             multilist += list(zip(first, second))
