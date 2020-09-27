@@ -25,4 +25,5 @@ def test_min(filepath):
     with open(filepath[1], 'r', encoding='utf-8') as file2:
         data2 = file2.read().replace('\r\n', '\n').replace('\n', '')
     
+    print("Comparing", filepath[0], "against", filepath[1]) 
     assert data1 == data2
