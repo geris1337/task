@@ -19,7 +19,7 @@ def prepare():
     return multilist
 
 @pytest.mark.parametrize("filepath", prepare())
-def test_min(filepath):
+def test_compare(filepath):
     with open(filepath[0], 'r', encoding='utf-8') as file1:
         data1 = file1.read().replace('\r\n', '\n').replace('\n', '')
     with open(filepath[1], 'r', encoding='utf-8') as file2:
