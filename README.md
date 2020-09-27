@@ -13,10 +13,9 @@ chmod +x prepare.sh
 ```
 ## Running the tests
 
-To launch task1.py, task2.py and task3.py execute like this
+To launch task1.py and task3.py execute like this
 ```
 python3 task1.py
-python3 task2.py
 python3 task3.py
 ```
 
